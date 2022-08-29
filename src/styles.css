@@ -1,0 +1,19 @@
+.bg-color {
+  background-color: rgb(233, 233, 233) !important;
+}
+
+body {
+  background-image: url(img/forest.jpg);
+}
+
+.bg-light {
+  background-color: white !important;
+}
+
+.links {
+  font-size: 15px;
+}
+
+.nav-link:hover {
+  color: #094cb1 !important;
+}
