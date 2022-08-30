@@ -17,6 +17,7 @@ import { PainelComponent } from './painel/painel.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DepartamentoModule } from './departamentos/departamento.module';
 import { EquipamentoModule } from './equipamentos/equipamento.module';
+import { NgxMaskModule } from 'ngx-mask';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { EquipamentoModule } from './equipamentos/equipamento.module';
     LoginComponent,
     PainelComponent,
     NavbarComponent
+
   ],
   imports: [
     BrowserModule,
@@ -36,7 +38,10 @@ import { EquipamentoModule } from './equipamentos/equipamento.module';
     AngularFirestoreModule,
 
     DepartamentoModule,
-    EquipamentoModule
+    EquipamentoModule,
+    NgxMaskModule.forRoot({
+      dropSpecialCharacters: false
+    })
   ],
   providers: [AuthenticationService],
   bootstrap: [AppComponent]

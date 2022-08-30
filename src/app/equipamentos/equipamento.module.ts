@@ -5,6 +5,7 @@ import { EquipamentoRoutingModule } from './equipamento-routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms';
 import { EquipamentoComponent } from './equipamento.component';
+import { NgxMaskModule } from 'ngx-mask';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { EquipamentoComponent } from './equipamento.component';
     CommonModule,
     NgbModule,
     ReactiveFormsModule,
-    EquipamentoRoutingModule
+    EquipamentoRoutingModule,
+    NgxMaskModule.forChild()
   ]
 })
 export class EquipamentoModule { }
