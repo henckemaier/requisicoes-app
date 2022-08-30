@@ -36,7 +36,7 @@
               <td>{{ equipamento.id }}</td>
               <td>{{ equipamento.nome }}</td>
               <td>R${{ equipamento.preco }}</td>
-              <td>{{ equipamento.data }}</td>
+              <td>{{ equipamento.data | date: "dd/MM/yyyy"}}</td>
               <td class="d-grid d-md-block">
                 <button
                   (click)="gravar(modal, equipamento)"
